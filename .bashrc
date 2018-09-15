@@ -45,3 +45,4 @@ alias fuckup_abrt='pushd ~/ABRT/abrt && rm -rf build && ./autogen.sh && make rpm
 alias cleanup-docker='docker rm -f $(docker ps -a -q) && docker rmi -f $(docker images -q)'
 alias cim='vim'
 alias bim='vim'
+alias fn="firefox-nightly &"
