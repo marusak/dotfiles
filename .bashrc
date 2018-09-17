@@ -38,6 +38,7 @@ export REQUESTS_CA_BUNDLE=/etc/pki/tls/certs/ca-bundle.crt1
 # User specific aliases and functions
 alias gits='git status'
 alias giff='git diff'
+alias gitl='git log --oneline'
 alias abrt_down='sudo dnf -y remove abrt abrt-cli libreport libreport-cli satyr'
 alias abrt_up='sudo dnf -y --nogpgcheck install abrt-desktop abrt abrt-cli libreport* satyr satyr-devel'
 alias docker_crash='docker run fedora /usr/bin/bash -c "timeout -s ABRT 1 sleep 10"'
