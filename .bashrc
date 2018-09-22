@@ -47,3 +47,7 @@ alias cleanup-docker='docker rm -f $(docker ps -a -q) && docker rmi -f $(docker 
 alias cim='vim'
 alias bim='vim'
 alias fn="firefox-nightly >/dev/null 2>&1 &"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/mmarusak/.sdkman"
+[[ -s "/home/mmarusak/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mmarusak/.sdkman/bin/sdkman-init.sh"
