@@ -34,6 +34,7 @@ export PATH=/home/mmarusak/minishift-1.18.0-linux-amd64:$PATH
 export JDK_HOME=/usr/local
 export ANDROID_HOME=/home/mmarusak/Android
 export REQUESTS_CA_BUNDLE=/etc/pki/tls/certs/ca-bundle.crt1
+export GITHUB_BASE=cockpit-project/cockpit
 
 # User specific aliases and functions
 alias gits='git status'
