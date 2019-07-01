@@ -48,7 +48,10 @@ alias cleanup-docker='docker rm -f $(docker ps -a -q) && docker rmi -f $(docker 
 alias cim='vim'
 alias bim='vim'
 alias fn="firefox-nightly >/dev/null 2>&1 &"
+alias autogen="./autogen.sh --prefix=/usr --sysconfdir=/etc --localstatedir=/var --enable-strict --enable-debug"
+alias cockpit-chrome="HOME=/tmp/ chromium-browser --remote-debugging-port=9222 about:blank &"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/mmarusak/.sdkman"
 [[ -s "/home/mmarusak/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mmarusak/.sdkman/bin/sdkman-init.sh"
+export REQUESTS_CA_BUNDLE=/etc/pki/tls/certs/ca-bundle.crt
