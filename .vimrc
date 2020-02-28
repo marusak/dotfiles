@@ -127,9 +127,8 @@ imap <F6> <ESC>:lclose<CR>
 " tab=8
 map <F7> <ESC>:set ts=8<CR>:set noexpandtab<CR>:set sw=8<CR>
 imap <F7> <ESC>:set ts=8<CR>:set noexpandtab<CR>:set sw=8<CR>a
-" tab=4, only spaces
-map <F8> <ESC>:set incsearch<CR>:set ts=4<CR>:set expandtab<CR>:set sw=4<CR>
-imap <F8> <ESC>:set incsearch<CR>:set ts=4<CR>:set expandtab<CR>:set sw=4<CR>a
+" build ctags
+map <F8> <ESC>:!ctags -R --exclude=.git --exclude=node_modules<CR>
 " save and make
 map <F9> <ESC>:w<CR><silent>:make\|redraw!\|cc<CR>
 imap <F9> <ESC>:w<CR>:make<CR>
