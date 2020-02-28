@@ -108,12 +108,12 @@ set tags=.git/tags
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " save
-map <F2> <ESC>:w<CR>
-imap <F2> <ESC>:w<CR>a
+map <F2> <ESC>:SyntasticCheck<CR>
+imap <F2> <ESC>:SyntasticCheck<CR>a
 
 " switch between paste and nopaste
 set pastetoggle=<F4>
