@@ -41,6 +41,10 @@ set secure
 highlight ColorColumn ctermbg=8
 :set colorcolumn=80 
 
+"Highlight 'lenght'
+:hi CustomPink ctermbg=205 guibg=hotpink guifg=black ctermfg=black
+:call matchadd('CustomPink', 'lenght')
+
 set et
 set ts=4
 set sw=4
