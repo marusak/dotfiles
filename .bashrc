@@ -15,6 +15,7 @@ export PS1='[\d \t \[\e[0;34m\]\u\[\e[m\] \[\e[0;31m\]\w\[\e[m\]]\n($?$(if git l
 alias gits='git status'
 alias giff='git diff'
 alias gitl='git log --oneline'
+alias gg='git grep'
 alias cim='vim'
 alias bim='vim'
 alias autogen="./autogen.sh --prefix=/usr --sysconfdir=/etc --localstatedir=/var --enable-strict --enable-debug"
