@@ -1,3 +1,8 @@
+for file in /etc/bash_completion.d/* ; do
+    source "$file"
+done
+source /usr/share/bash-completion/completions/git
+
 function git-branch-name
 
 {
